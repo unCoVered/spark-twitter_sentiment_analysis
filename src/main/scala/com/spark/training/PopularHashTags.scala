@@ -32,9 +32,9 @@ object PopularHashTags {
 
   def main(args: Array[String]): Unit = {
 
-    sc.setLogLevel("INFO")
+    sc.setLogLevel("WARN")
 
-    val filters = args
+    val filters = args.takeRight(args.length)
 
     // System properties -> Twitter keys
     System.setProperty("twitter4j.oauth.consumerKey", CONSUMER_KEY)
