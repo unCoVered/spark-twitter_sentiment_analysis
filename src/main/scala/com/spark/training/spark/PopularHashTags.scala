@@ -1,4 +1,4 @@
-package com.spark.training
+package com.spark.training.spark
 
 import org.apache.spark.streaming.twitter.TwitterUtils
 import org.apache.spark.streaming.{Seconds, StreamingContext}

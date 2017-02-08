@@ -96,6 +96,30 @@
       <artifactId>spark-streaming-flume_2.10</artifactId>
       <version>1.4.1</version>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/org.apache.kafka/kafka_2.10 -->
+    <dependency>
+      <groupId>org.apache.kafka</groupId>
+      <artifactId>kafka_2.10</artifactId>
+      <version>0.8.2.1</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.twitter4j/twitter4j-core -->
+    <dependency>
+      <groupId>org.twitter4j</groupId>
+      <artifactId>twitter4j-core</artifactId>
+      <version>4.0.4</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.twitter4j/twitter4j-stream -->
+    <dependency>
+      <groupId>org.twitter4j</groupId>
+      <artifactId>twitter4j-stream</artifactId>
+      <version>4.0.4</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.twitter4j/twitter4j-async -->
+    <dependency>
+      <groupId>org.twitter4j</groupId>
+      <artifactId>twitter4j-async</artifactId>
+      <version>4.0.4</version>
+    </dependency>
   </dependencies>
 
   <build>
@@ -137,6 +161,14 @@
           </classpathContainers>
         </configuration>
       </plugin>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <configuration>
+                <source>1.6</source>
+                <target>1.6</target>
+            </configuration>
+        </plugin>
     </plugins>
   </build>
   <reporting>
